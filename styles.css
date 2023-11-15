@@ -1,0 +1,439 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;    
+}
+ol, ul{
+list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.seccion1{
+    background-color:rgba(34,33,31,0.85);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    padding: 2em;
+    
+}
+header a i{
+    color:blue;
+    font-size: 3em;
+    padding: 0.5em; 
+    line-height:2em;
+}
+
+.menu {
+    font-size: x-large;
+    color: white;
+}
+
+header nav ul {
+    color: white;
+    display:flex;
+    justify-content: center;
+    gap: 1.2em;      
+     
+       
+}
+header nav ul li a {
+    color: white;
+
+}
+main id,
+h2 {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+main id, p{
+    font-size: 1.2em;     
+}
+.imagen-servicios{
+    
+    display: inline-flex;
+}
+.container{
+display: flex;
+justify-content: space-between;
+    
+}
+
+ 
+.seccion-2 img{
+    width: 100%;
+    padding: 2em;
+}
+
+h2{
+    background-color: #22211f;
+    color:white;
+    
+    
+}
+    
+.red-social a {
+    display:inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 5px;   
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    padding:3em;
+}
+.red-social {    
+    background-color:aqua;
+    width: 100%;
+    justify-content: first baseline;
+    
+    
+    
+}
+.pie-pagina{
+    background-color: #6699ff;
+    width: 100%;
+    font-size:x-large; 
+    text-align: center; 
+    padding: 2em;
+   
+}
+
+.red-social a:hover {
+    color:aqua;
+    
+}
+    
+/*MENU*/
+
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color:rgb(186, 5, 5);
+    float:right;
+    line-height: 10px;
+    margin-right: 20px;
+    cursor:pointer;
+    display: none;
+}
+/*  MEDIA QUERIES  */
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+pequeñas */
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para pantallas más grandes (a partir de 769px) */
+@media (min-width: 769px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+grandes */
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+    
+
+header{
+    background-color: burlywood;
+}
+.acerca-de{
+    text-align: center;
+    }
+.acerca-imagen{
+    margin-bottom: 40px;
+}
+h2.fuente-acento{
+    text-align: center;
+}
+.checkbtn{
+    display: block;
+}
+.menu ul li{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#2c3e50;
+    top:80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    }
+
+#check:checked ~ ul{
+        left: 0;
+        display:block;
+    }
+#encabezado nav ul li{
+    display: block;
+    margin: 50px o;
+    line-height: 30px;
+}
+
+#encabezado nav ul li a{
+    font-size: 20px;
+}
+#check:checked ~ .checkbtn{
+    color:#2c3e50;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tarjeta {
+    background-color: aqua;   
+    width: auto;
+    border: 5px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+    ;
+}
+
+.cuerpo {
+    padding: 10px;
+    flex: 1 1 100%;
+}
+
+.pie {
+    background: #6699ff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pie a {
+    text-decoration: none;
+    color: white;
+}
+
+.pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+
+/* dispositivos mobile < 768px > dispositivos medianos > 1024px */
+@media (min-width: 768px) {
+    .tarjeta {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarjeta {
+        width: 30%;
+    }
+}
+    
+
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+        padding: 50px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+}
+
+.form-row input[type="email"] {
+    background-color: #bdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+    width: 250px;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+    margin-left: 120px;
+}
+        
+   
+ 
+ 
